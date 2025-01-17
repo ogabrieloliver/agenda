@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- defini o conjunto de caracteres do documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- define responsividade para diferentes tamanhos de tela -->
+    <title>Agenda de Contatos</title>
+    <!-- título da página -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link para o arquivo CSS para estilização -->
+  </head>
+  <body>
+    <h1>Agenda de Contatos 👤</h1>
+    <!-- título principal da página -->
+
+    <!-- container para o formulário de adição de contatos -->
+    <div class="form-container">
+      <input value="nome" type="text" id="nome" placeholder="Digite o nome AQUI..." />
+      <!-- campo para nome -->
+      <input 
+        type="text"
+        id="celular"
+        placeholder="Agora digite o telefone..."
+      />
+      <!-- campo para telefone -->
+      <button onclick="adicionaContato()">Adicionar Contato</button>
+      <!-- botão para adicionar contato -->
+    </div>
+
+    <!-- container para a barra de pesquisa -->
+    <div class="search-container">
+      <input type="text" id="procurar" placeholder="Procure seu Contato" />
+      <!-- campo para pesquisa -->
+      <button id="procurarBtn">Pesquisar</button>
+      <!-- botão para pesquisar contato -->
+    </div>
+
+    <!-- div para exibir a lista de contatos -->
+    <div id="listaDeContato" class="lista-de-contato"></div>
+
+    <script src="script.js"></script>
+    <!-- inclui o arquivo JavaScript para a lógica da aplicação -->
+  </body>
+</html>
+
